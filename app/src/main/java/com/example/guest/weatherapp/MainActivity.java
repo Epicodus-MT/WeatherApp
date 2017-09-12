@@ -6,18 +6,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
+
 public class MainActivity extends AppCompatActivity {
-    private Button mFindWeatherButton;
-    private EditText mLocationEditText;
+
+    @Bind(R.id.findWeatherButton) Button mFindWeatherButton;
+    @Bind(R.id.locationEditText) EditText mLocationEditText;
+    @Bind(R.id.appNameTextView) TextView mAppNameTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mLocationEditText = (EditText) findViewById(R.id.locationEditText);
-        mFindWeatherButton = (Button) findViewById(R.id.findWeatherButton);
+        ButterKnife.bind(this);
 
         mFindWeatherButton.setOnClickListener(new View.OnClickListener() {
             @Override
