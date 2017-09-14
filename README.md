@@ -11,7 +11,7 @@ _This is an Android Application for the weather._
 ## Specifications
 |Behavior|Input|Output|
 |---|---|---|
-|User enters date|September 8, 2017|User sent to 'Locations Page' where the tracked locations from that date are listed|
+|User enters zip code|98155|Forecast for their area is listed|
 
 ## Technologies Used
 
@@ -25,7 +25,7 @@ _This is an Android Application for the weather._
 Within the repository you'll find the following directories and files:
 
 ```
-MemoryCare/
+WeatherApp/
 ├── .gradle/
 ├── .idea/
 ├── app/
@@ -49,7 +49,7 @@ MemoryCare/
 ## Setup/Installation Requirements
 To run this program:
   * _LOCAL: Go to Terminal_
-  * `git clone https://github.com/Epicodus-MT/MemoryCare.git`
+  * `git clone https://github.com/Epicodus-MT/WeatherApp.git`
   * Install and open [Android Studio](https://developer.android.com/studio/index.html)
   * Select '_Open an existing Android Studio project_'
   * Navigate to cloned directory and click '_OK_'
